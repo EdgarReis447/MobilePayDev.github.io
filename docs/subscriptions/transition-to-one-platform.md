@@ -410,7 +410,7 @@ These are the available fields of payment webhook we will be sending
 
 Possible failureCode and failureText combinations. These fields are only present if charge failed async validation after it was created using charge batch creation endpoint
 
-| Failure code | Failure text                               | Explanation                                    | Possible values     |
+| Failure code | Failure text                               | Explanation                                                          |
 |------------- |--------------------------------------------|--------------------------------------------------------------------- |
 | 50006        | DeclinedBySystem                           | Unspecified exception during charge creation                         | 
 | 50003        | AgreementNotActive                         | Charge is requested for non active agreement                         | 
@@ -461,8 +461,8 @@ These are the available fields of agreement webhook we will be sending
 
 These are the possible event types in agreement callback
 
-| Event type                            | Description                                          |
-|---------------------------------------|------------------------------------------------------|
+| Event type                         | Description                                          |
+|------------------------------------|------------------------------------------------------|
 | "recurring.agreement-activated.v1" | User has accepted agreement                             |
 | "recurring.agreement-rejected.v1"  | User has rejected agreement                             |
 | "recurring.agreement-stopped.v1"   | Agreement was stopped either by merchant either by user |  
